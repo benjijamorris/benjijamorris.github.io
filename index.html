@@ -1,0 +1,188 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+    p{
+      font-size:20px;
+      font-family:helvetica;
+      text-align:justify;
+    }
+    h1,h2,h4{
+      text-align:center;
+      margin-top:-10px;
+    }
+    h3{
+      text-align:center;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:link {
+      text-decoration: none;
+      color:black
+    }
+    .object-left{
+      float:left;
+      background-color: #F9F9F6;
+      border: 2px solid #DCDCDC;
+      border-radius: 5px;
+      width:45%;
+      padding:15px 15px 5px 10px;
+      margin-bottom:25px;
+    }
+    .object-right{
+      float:right;
+      background-color: #F9F9F6;
+      border: 2px solid #DCDCDC;
+      border-radius: 5px;
+      width:45%;
+      padding:15px 15px 5px 10px;
+      margin-bottom:25px;
+    }
+    .object-center {
+      margin:auto;
+      background-color: #F9F9F6;
+      border: 2px solid #DCDCDC;
+      border-radius: 5px;
+      width:95%;
+      padding:15px 15px 5px 10px;
+    }
+    .icon {
+      height:10%;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    :hover .icon{
+      height:11%;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="sidenav">
+      <img src ="resume_pic.png" alt ="Me" width="120" style="padding-left:10px">
+      <br><br>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#papers">Papers + Posters</a>
+    </div>
+
+    <!-- Page content -->
+
+    <div class="main">
+      <div>
+        <h1 align ='center'id = 'about' style = "padding-top:30px;margin-bottom:-6px;">About</h1>
+        <hr style = "width:280px;border-top:2px solid black;">
+        <br>
+        <center>
+          <img style = "margin-left:auto; margin-right:auto" src = 'teampic.jpg', width = 80%/>
+        </center>
+        <br><br>
+        <div class = "object-center">
+          <p> Hi! I am currently a senior at the University of Colorado, Boulder pursuing a double major in Computer Science and Neuroscience. Outside of class,
+            I am often found in the pool, where I am a member of CU's 9-time national champion club <a href = 'http://cuswimdive.com/'target="_blank">Swim and Dive team</a>. I
+            also work at CU's Center for Health and Addiction: Neuroscience, Genes, and the Environment <a href = 'https://www.colorado.edu/center/cuchange/'target="_blank">(CUChange)</a>
+            where I work in the Biomarker Team with an emphasis on inflammation and genetic analyses. My independent work in the lab on exercise, genetics, and depression
+            is generously supported by CUChange as well as CU's <a href = 'https://www.colorado.edu/bsi/'target="_blank">Biological Sciences Initiative</a> and
+          <a href = 'https://www.colorado.edu/urop/'target="_blank">Undergraduate Research Opportunities</a> programs. In addition, I enjoy hiking, backpacking, climbing, and reading in my spare time.
+           I can be reached at benjijamorris [at] gmail dot com.
+          </p>
+        </div>
+      </div>
+
+      <br><br><br>
+      <div style='padding-bottom:100px;padding-top:100px;'>
+        <h1 align ='center'id = 'projects' style = "margin-bottom:-6px;">Projects</h1>
+        <hr style = "width:280px;border-top:2px solid black;">
+        <br>
+        <div class = 'object-left'>
+          <a target = "_blank"><img class ='icon'src = 'cpu.png' style = "text-align:center"/></a>
+          <h3>Traveling Salesman Problem</h3>
+          <h4>May-August, 2017</h4>
+          <p>A C++ program using the Google Maps API and a genetic algorithm approach to find locally minimal solutions to the traveling salesman problem.
+          </p>
+        </div>
+
+        <div class = 'object-right' >
+          <a  target = "_blank"><img class ='icon'src = 'cpu.png' style = "text-align:center"/></a>
+          <h3>ICESat-2 Cloud Removal</h3>
+          <h4>Collaborators: Matthew Lawson</h4>
+          <h4>In Progress</h4>
+          <p>Photon return data from the ICESat-2 satellite is used for a variety of purposes such as tracking glacial activity and measuring
+            rainforest canopy density. However, photon dispersion from clouds and daylight result in noisy data, making it difficult to identify
+            relevant features. We used an unsupervised Gaussian Mixture Model approach to cluster and classify points as 'ground' or 'cloud'.
+          </p>
+        </div>
+
+        <div class = 'object-left'>
+          <a target = "_blank"><img class ='icon'src = 'cpu.png' style = "text-align:center"/></a>
+          <h3>Identifying Vaccination-Amenable Populations</h3>
+          <h4>Collaborators: Matthew Lawson</h4>
+          <h4>In Progress</h4>
+          <p>In order to preserve herd immunity, a phenomenon important for protecting individuals who cannot be vaccinated,
+              a large percentage of the population must be vaccinated. However, it is often difficult to identify whether
+              a population has low vaccination rates due to anti-vaccine sentiment or economic/logistical obstacles. Similarly,
+              there is a dichotomy in outreach efficacy, so better identifying these populations can improve outreach resource allocation.
+              Here, we combine household income and vaccination data from California and use a k-means clustering approach to identify
+              amenable populations.
+          </p>
+        </div>
+
+        <div class = 'object-right'>
+          <a  target = "_blank"><img class ='icon'src = 'cpu.png' style = "text-align:center"/></a>
+          <h3>Qualtrics Timeline Follow Back Variable Extraction</h3>
+          <h4>January, 2019 - Present</h4>
+          <p>Python script to extract variables of interest from a diverse set of qualtrics surveys regarding substance use. </p>
+        </div>
+
+        <div class = 'object-right'>
+          <a  target = "_blank"><img class ='icon'src = 'cpu.png' style = "text-align:center"/></a>
+          <h3>Wet Lab Budgeting Tool</h3>
+          <h4>April, 2018 - Present</h4>
+          <p>Using the Google Calendar API, I created a NodeJS web application to track CUChange appointments requiring wet lab work and assess the materials cost for each
+              appointment. These projections were then used to track spending for five studies over time and create budget projections.
+          </p>
+        </div>
+
+        <div class = 'object-left'>
+          <a  target = "_blank"><img class ='icon'src = 'cpu.png' style = "text-align:center"/></a>
+          <h3>OpenFMRI Exploration</h3>
+          <h4>In Progress</h4>
+          <p>Using the OpenFMRI <a href = 'https://openneuro.org/datasets/ds000164/versions/00001' target = "_blank">Stroop dataset</a>, I am working on using various decision tree algorithms to predict
+            whether the presented stimulus is a congruent or incongruent Stroop stimulus and also whether the participant correctly identified the stimulus.
+          </p>
+        </div>
+      </div>
+
+      <br><br><br>
+      <div style='padding-bottom:100px;padding-top:990px;'>
+        <h1 align ='center'id = 'papers' style = "margin-bottom:-6px;border-top:100px;">Papers + Posters</h1>
+        <hr style = "width:280px;border-top:2px solid black;">
+        <br>
+
+        <div class = 'object-left'>
+          <a href = 'Thesis Defense Copy.pdf' target = "_blank"><img class = 'icon' src = 'brain.ico' style = "text-align:center"/></a>
+          <h3>Honors Thesis</h3>
+          <a href = 'Thesis Presentation.pdf', target= "_blank"><h4>Slides</h4></a>
+          <h4>October, 2019</h4>
+          <p>Culmination of two years of independent research concerning inflammatory predictors of the depressive responses to exercise.
+              Specifically, it was hypothesized that exercise alteration of a class of proteins called cytokines could impact rates of new
+              neuron generation in the hippocampus (a brain region associated with depression and cognitive function) in a manner that
+              influences depressive symtpoms. Further exploratory analyses involved examination of three single nucleotide polymorphisms in cytokine-related genes
+              associated with depressive symptoms. Although the main hypotheses were not supported, several analyses that some alleles of the SNPs examined could
+              protect against hippocampal atrophy in association with exercise.
+          </p>
+        </div>
+
+        <div class = 'object-right'>
+          <a href = 'APS Poster.pdf' target = "_blank"><img class = 'icon' src = 'brain.ico' style = "text-align:center"/></a>
+          <h3>American Psychological Society Poster</h3>
+          <h4>May, 2019</h4>
+          <p>Poster from the APS poster session using inflammatory markers in older adults to predict depressive responses to exercise.</p>
+        </div>
+      </div>
+    </body>
+  </html>
