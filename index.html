@@ -97,7 +97,7 @@
           <p> Hi! I am a recent graduate of the University of Colorado, Boulder having completed a double major in Computer Science and Neuroscience. Outside of class,
             I am often found in the pool, where I am a member of CU's 9-time national champion club <a class = 'link' href = 'http://cuswimdive.com/'target="_blank">Swim and Dive team</a>. I
             also work at CU's Center for Health and Addiction: Neuroscience, Genes, and the Environment <a class = 'link' href = 'https://www.colorado.edu/center/cuchange/'target="_blank">(CUChange)</a>
-            where I work in the Biomarker Team with an emphasis on inflammation and genetic analyses. My independent work in the lab on exercise, genetics, and depression
+            where I am a member of the Biomarker Team with an emphasis on inflammation and genetic analyses. My independent work in the lab on exercise, genetics, and depression
             is generously supported by CUChange as well as CU's <a class = 'link' href = 'https://www.colorado.edu/bsi/'target="_blank">Biological Sciences Initiative</a> and
           <a class = 'link' href = 'https://www.colorado.edu/urop/'target="_blank">Undergraduate Research Opportunities</a> programs. In addition, I enjoy hiking, backpacking, climbing, and reading in my spare time.
            I can be reached at benjijamorris [at] gmail dot com.
@@ -116,10 +116,11 @@
           <h3>Boggle Player</h3>
           <h4>June 2020</h4>
           <p> While playing Boggle online with my family, we were joined by a superhuman boggle player. Inspired, I set out to create a Boggle Bot of my own. The bot uses Selenium to log in to an online Boggle site,
-            sets up a solo game (didn't want to ruin other peoples' games), changes some user-inputted settings, and begins a game. The boggle board is rendered in HTML, but seemingly randomly fetching the board gives '0' instead
-            of the correct letter, so the bot will repeatedy try logins until a correct board is obtained. Prefixes are stored as a 4-tuple containing the x and y coordinates of a letter, a prefix ending at that position,
+            sets up a solo game (didn't want to ruin other peoples' games), change some user-inputted settings, and begin a game. Prefixes are stored as a 4-tuple containing the x and y coordinates of a letter, a prefix ending at that position,
             and a list of the positions of letters used to spell that word. To prevent expanding prefixes that don't lead to any words, a trie is created from a version of the SCOWL dictionary to check prefixes quickly.
-            Future Directions: Take as input a picture of a boggle board and return a list of valid words.
+            As an extension, I also implemented a Convolutional Neural Network to get the letter layout of a boggle board providedin an image and then use the helper functions I created for theonlineboggle game to enumerate the words found in the picture.
+            Using five screenshots of the web boggle player and image augmentation, I was able to achieve 98% validation accuracy and correctly call the layout of a few test boggle images. In the future, I hope to makethe CNN more robust
+            to pictures of boggle boards not coming from website screenshots. 
           </p>
         </div>
 
